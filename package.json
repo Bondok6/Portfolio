@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Bondok6/Portfolio/issues"
   },
-  "homepage": "https://github.com/Bondok6/Portfolio#readme"
+  "homepage": "https://github.com/Bondok6/Portfolio#readme",
+  "dependencies": {
+    "stylelint": "^14.1.0"
+  }
 }
