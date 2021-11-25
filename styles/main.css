@@ -74,6 +74,7 @@ header {
 .hero__title {
   font-size: 4rem;
   font-weight: bold;
+  padding: 1rem;
 }
 
 .hero__title span {
