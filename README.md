@@ -50,7 +50,7 @@ Give a ⭐️ if you like this project!
 
 👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/Bondok6)
+- GitHub: [@Bondok6](https://github.com/Bondok6)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 📝 License
