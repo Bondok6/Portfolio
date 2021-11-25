@@ -4,7 +4,7 @@
 
 > This is a website that exemplifies my skills, projects, qualifications, education, training, experiences, and resume.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./images/screenshot-mobile.PNG)
 
 ## Built With
 
@@ -40,12 +40,11 @@ To get a local copy up and running follow these simple example steps.
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
+-->
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
--->
 
 ## Authors
 
