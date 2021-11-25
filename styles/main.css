@@ -1,5 +1,80 @@
-header {
-  width: 100vw;
-  min-height: 100vh;
-  background-image: url("./images/header-mobile.png");
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+:root {
+  /* Colors */
+  --primary-color: #172b4d;
+  --secondary-color: #36b37e;
+  --nav-color: #28352f;
+  --icon-color: #505f79;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+}
+
+.nav {
+  min-height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav__title {
+  color: var(--nav-color);
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.nav__menu {
+  width: 5rem;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 90vh;
+  background-image: url(../images/header-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 2.4rem;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 1.5;
+}
+
+.hero__title span {
+  color: var(--secondary-color);
+  display: inline-block;
+}
+
+.hero__discription {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.hero__icons {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.hero__icons img {
+  width: 3rem;
 }
