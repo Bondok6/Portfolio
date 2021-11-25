@@ -6,6 +6,7 @@
   --secondary-color: #36b37e;
   --nav-color: #28352f;
   --icon-color: #505f79;
+  --text-color: #3a4a42;
 }
 
 * {
@@ -22,7 +23,33 @@ html {
 body {
   font-family: "Inter", sans-serif;
   font-size: 10px;
+  color: var(--primary-color);
 }
+
+/* Start General Rules */
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.description {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* End General Rules */
+
+/* Start Header Section */
 
 header {
   position: fixed;
@@ -42,13 +69,15 @@ header {
   color: var(--nav-color);
   font-size: 2rem;
   font-weight: 600;
-  cursor: pointer;
-  text-decoration: none;
 }
 
 .burger {
   cursor: pointer;
 }
+
+/* Start Header Section */
+
+/* Start Hero Section */
 
 .hero {
   min-height: 100vh;
@@ -71,25 +100,13 @@ header {
   color: var(--primary-color);
 }
 
-.hero__title {
-  font-size: 4rem;
-  font-weight: bold;
-  padding: 1rem;
-}
-
-.hero__title span {
+.title span {
   color: var(--secondary-color);
   display: inline-block;
 }
 
-.hero__discription {
-  font-size: 2rem;
-  font-weight: 400;
-}
-
 .hero__icons {
   width: 50vw;
-  list-style: none;
   display: -webkit-box;
   display: flex;
   justify-content: space-evenly;
@@ -107,3 +124,5 @@ header {
   background: none;
   cursor: pointer;
 }
+
+/* End Hero Section */
