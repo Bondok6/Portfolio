@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+:root {
+  /* Colors */
+  --primary-color: #172b4d;
+  --secondary-color: #36b37e;
+  --nav-color: #28352f;
+  --icon-color: #505f79;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  min-height: 8vh;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.logo {
+  color: var(--nav-color);
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.burger {
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: url(../images/header-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  margin: 2.4rem;
+  padding-top: 3rem;
+  color: var(--primary-color);
+}
+
+.hero__title {
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.hero__title span {
+  color: var(--secondary-color);
+  display: inline-block;
+}
+
+.hero__discription {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.hero__icons {
+  width: 50vw;
+  list-style: none;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero__icons li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.btn-down {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
