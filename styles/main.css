@@ -255,13 +255,13 @@ header {
 
 /* Start About Section */
 
+/* prettier-ignore */
 .about {
   padding: 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: no-repeat 100% -3% url(../images/mask.svg),
-    no-repeat 0 20% url(../images/mask2.svg);
+  background: no-repeat 100% -3% url(../images/mask.svg), no-repeat 0 20% url(../images/mask2.svg);
 }
 
 .about__btn {
