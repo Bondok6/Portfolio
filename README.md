@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> This is a website that exemplifies my skills, projects, qualifications, education, training, experiences, and resume.
+> ### This is a website that exemplifies my skills, projects, qualifications, education, training, experiences, and resume.
 
 ![screenshot](./images/screenshot-mobile.PNG)
 
