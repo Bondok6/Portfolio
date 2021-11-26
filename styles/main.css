@@ -287,6 +287,10 @@ header {
   color: #344563;
 }
 
+.about__card__list {
+  justify-content: center;
+}
+
 .about__card__list > li {
   font-size: 1.2rem;
   font-weight: 600;
