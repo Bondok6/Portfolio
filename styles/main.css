@@ -6,6 +6,11 @@
   --secondary-color: #36b37e;
   --nav-color: #28352f;
   --icon-color: #505f79;
+  --text-color: #3a4a42;
+  --blue-btn: #1e488f;
+  --red-btn: #dd5153;
+  --bg-card: #ebf0ee;
+  --about-txt: #344563;
 }
 
 * {
@@ -22,7 +27,66 @@ html {
 body {
   font-family: "Inter", sans-serif;
   font-size: 10px;
+  color: var(--primary-color);
 }
+
+/* Start General Rules */
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+}
+
+.description {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.btn {
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 1.2rem;
+  border-radius: 4px;
+  color: #fff;
+  transition: 0.6s;
+}
+
+.btn--green {
+  background-color: var(--secondary-color);
+}
+
+.btn--blue {
+  background-color: var(--blue-btn);
+}
+
+.btn--red {
+  background-color: var(--red-btn);
+}
+
+.btn:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.btn:active {
+  background-color: #008552;
+}
+
+/* End General Rules */
+
+/* Start Header Section */
 
 header {
   position: fixed;
@@ -42,13 +106,15 @@ header {
   color: var(--nav-color);
   font-size: 2rem;
   font-weight: 600;
-  cursor: pointer;
-  text-decoration: none;
 }
 
 .burger {
   cursor: pointer;
 }
+
+/* Start Header Section */
+
+/* Start Hero Section */
 
 .hero {
   min-height: 100vh;
@@ -66,30 +132,18 @@ header {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
-  margin: 2.4rem;
+  margin-inline: 2.4rem;
   padding-top: 3rem;
   color: var(--primary-color);
 }
 
-.hero__title {
-  font-size: 4rem;
-  font-weight: bold;
-  padding: 1rem;
-}
-
-.hero__title span {
+.title span {
   color: var(--secondary-color);
   display: inline-block;
 }
 
-.hero__discription {
-  font-size: 2rem;
-  font-weight: 400;
-}
-
 .hero__icons {
   width: 50vw;
-  list-style: none;
   display: -webkit-box;
   display: flex;
   justify-content: space-evenly;
@@ -107,3 +161,144 @@ header {
   background: none;
   cursor: pointer;
 }
+
+/* End Hero Section */
+
+/* Start Work Section */
+
+.work {
+  margin-inline: 2.4rem;
+  padding-bottom: 10rem;
+}
+
+.title--work {
+  text-transform: capitalize;
+  padding: 2rem;
+}
+
+.title--work::after,
+.title--about::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid var(--secondary-color);
+  border-radius: 2.4rem;
+  width: 4.8rem;
+  margin: 2.4rem auto;
+}
+
+.card-container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
+}
+
+.card {
+  width: 33rem;
+  height: 47rem;
+  border: 1px solid #d0d9d4;
+  border-radius: 0.8rem;
+}
+
+.card__imgbox {
+  height: 60%;
+  background-color: var(--bg-card);
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  padding-block: 10%;
+}
+
+.card__details {
+  height: 40%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.card__text {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+
+.card__list,
+.about__card__list {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card__list > li {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color);
+  background: var(--bg-card);
+  border-radius: 4px;
+  padding: 0.8rem 1.2rem;
+}
+
+/* End Work Section */
+
+/* Start About Section */
+
+/* prettier-ignore */
+.about {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: no-repeat 100% -3% url(../images/mask.svg), no-repeat 0 20% url(../images/mask2.svg);
+}
+
+.about__btn {
+  margin: 4rem 0 8rem;
+}
+
+.about__card {
+  height: 35.2rem;
+  width: 32.2rem;
+  background-color: var(--bg-card);
+  border: 1px solid #d0d9d4;
+  border-radius: 0.8rem;
+}
+
+.about__card__imgbox {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__text--about {
+  color: #344563;
+}
+
+.about__card__list {
+  justify-content: center;
+}
+
+.about__card__list > li {
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #fff;
+  color: var(--secondary-color);
+  border-radius: 4px;
+  padding: 0.8rem 1.2rem;
+  margin: 0.5rem;
+}
+
+/* End About Section */
