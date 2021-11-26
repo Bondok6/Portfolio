@@ -10,6 +10,7 @@
   --blue-btn: #1e488f;
   --red-btn: #dd5153;
   --bg-card: #ebf0ee;
+  --about-txt: #344563;
 }
 
 * {
@@ -41,6 +42,8 @@ body {
 .description {
   font-size: 2rem;
   font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
 }
 
 a {
@@ -165,6 +168,7 @@ header {
 
 .work {
   margin-inline: 2.4rem;
+  padding-bottom: 10rem;
 }
 
 .title--work {
@@ -172,7 +176,8 @@ header {
   padding: 2rem;
 }
 
-.title--work::after {
+.title--work::after,
+.title--about::after {
   content: "";
   display: block;
   border-bottom: 4px solid var(--secondary-color);
@@ -228,11 +233,13 @@ header {
   text-transform: capitalize;
 }
 
-.card__list {
+.card__list,
+.about__card__list {
   width: 100%;
   display: -webkit-box;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .card__list > li {
@@ -245,3 +252,47 @@ header {
 }
 
 /* End Work Section */
+
+/* Start About Section */
+
+.about {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__btn {
+  margin: 3.6rem 0;
+}
+
+.about__card {
+  height: 35.2rem;
+  width: 32.2rem;
+  background-color: var(--bg-card);
+  border: 1px solid #d0d9d4;
+  border-radius: 0.8rem;
+}
+
+.about__card__imgbox {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__text--about {
+  color: #344563;
+}
+
+.about__card__list > li {
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #fff;
+  color: var(--secondary-color);
+  border-radius: 4px;
+  padding: 0.8rem 1.2rem;
+  margin: 0.5rem;
+}
+
+/* End About Section */
