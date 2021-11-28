@@ -8,8 +8,8 @@
 
 ## Built With
 
-- HTML
-- CSS
+- HTML - HTML5
+- CSS - CSS3
 
 ## Live Demo
 
