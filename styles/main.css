@@ -312,6 +312,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--primary-color);
   background: no-repeat 90% 105% url(../images/form-bg.svg);
 }
 
@@ -343,6 +344,7 @@ textarea {
   width: 100%;
   padding: 1.2rem;
   font-size: 1.5rem;
+  resize: vertical;
 }
 
 input[type="submit"] {
