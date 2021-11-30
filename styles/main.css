@@ -11,6 +11,7 @@
   --red-btn: #dd5153;
   --bg-card: #ebf0ee;
   --about-txt: #344563;
+  --form-border: #d0d9d4;
 }
 
 * {
@@ -302,3 +303,51 @@ header {
 }
 
 /* End About Section */
+
+/* Start Contact Section */
+
+/* prettier-ignore */
+.contact {
+  margin-block: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: no-repeat 90% 105% url(../images/form-bg.svg);
+}
+
+form {
+  margin-top: 5.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+input {
+  margin-top: 2.4rem;
+  min-height: 4.8rem;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 1.5rem 1.6rem;
+  border: 1px solid var(--form-border);
+  border-radius: 4px;
+}
+
+input:focus {
+  border: 1px solid var(--secondary-color);
+}
+
+textarea {
+  margin-top: 2.4rem;
+  min-height: 11.4rem;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.5rem;
+}
+
+input[type="submit"] {
+  margin-top: 2.4rem;
+  width: 12.9rem;
+}
+
+/* End Contact Section */
