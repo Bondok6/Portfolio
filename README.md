@@ -11,47 +11,42 @@
 - HTML - HTML5
 - CSS - CSS3
 
+## Additional tools
+
+- Figma
+- FormSpree
+
 ## Live Demo
 
 [Live Demo Link](https://bondok6.github.io/Portfolio/)
 
-<!--
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+`git clone https://github.com/MrBrN197/Portfolio`
 
-### Setup
+## Authors
 
-### Install
+👤 **Author1**
 
-### Usage
-
-### Run tests
-
-### Deployment
+- GitHub: [@Bondok6](https://github.com/Bondok6)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
--->
+
+### List of Contribuitors
+
+- GitHub: [@marcelosdata](https://github.com/marcelosdata)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/msn9/)
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Authors
-
-👤 **Author**
-
-- GitHub: [@Bondok6](https://github.com/Bondok6)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 📝 License
 
