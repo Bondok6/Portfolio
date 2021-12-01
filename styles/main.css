@@ -55,6 +55,19 @@ li {
   list-style: none;
 }
 
+.links {
+  width: 50vw;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.links li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 .btn {
   font-size: 1.7rem;
   font-weight: 500;
@@ -141,19 +154,6 @@ header {
 .title span {
   color: var(--secondary-color);
   display: inline-block;
-}
-
-.hero__icons {
-  width: 50vw;
-  display: -webkit-box;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.hero__icons li {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
 }
 
 .btn-down {
@@ -313,7 +313,7 @@ header {
   flex-direction: column;
   align-items: center;
   color: var(--primary-color);
-  background: no-repeat 90% 105% url(../images/form-bg.svg);
+  background: no-repeat 100% 95% url(../images/form-bg.svg);
 }
 
 form {
@@ -334,10 +334,6 @@ input {
   border-radius: 4px;
 }
 
-input:focus {
-  border: 1px solid var(--secondary-color);
-}
-
 textarea {
   margin-top: 2.4rem;
   min-height: 11.4rem;
@@ -350,6 +346,18 @@ textarea {
 input[type="submit"] {
   margin-top: 2.4rem;
   width: 12.9rem;
+}
+
+.contact-details {
+  margin-top: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-details p {
+  margin-block: 2rem;
+  font-size: 2rem;
 }
 
 /* End Contact Section */
