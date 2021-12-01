@@ -75,7 +75,7 @@ li {
   padding: 1.2rem;
   border-radius: 4px;
   color: #fff;
-  transition: 0.5s;
+  transition: 0.6s;
 }
 
 .btn--green {
@@ -92,6 +92,8 @@ li {
 
 .btn:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  background-color: var(--bg-card);
+  color: var(--secondary-color);
 }
 
 .btn:active,
