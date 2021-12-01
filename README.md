@@ -24,7 +24,7 @@
 
 To get a local copy up and running follow these simple example steps.
 
-`git clone https://github.com/MrBrN197/Portfolio`
+`git clone git@github.com:Bondok6/Portfolio.git`
 
 ## Authors
 
