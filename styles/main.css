@@ -38,6 +38,7 @@ body {
   font-weight: bold;
   padding: 1rem;
   text-align: center;
+  margin-inline: 2.4rem;
 }
 
 .description {
@@ -45,6 +46,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   text-align: center;
+  margin-inline: 2.4rem;
 }
 
 a {
@@ -60,12 +62,6 @@ li {
   display: -webkit-box;
   display: flex;
   justify-content: space-evenly;
-}
-
-.links li {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
 }
 
 .btn {
@@ -99,6 +95,17 @@ li {
   background-color: #008552;
 }
 
+@media screen and (min-width: 600px) {
+  .title,
+  .description {
+    margin-inline: 18rem;
+  }
+
+  .links {
+    width: 30vw;
+  }
+}
+
 /* End General Rules */
 
 /* Start Header Section */
@@ -127,6 +134,27 @@ header {
   cursor: pointer;
 }
 
+.nav-list {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .logo,
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 2rem;
+    cursor: pointer;
+  }
+}
+
 /* Start Header Section */
 
 /* Start Hero Section */
@@ -147,7 +175,6 @@ header {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
-  margin-inline: 2.4rem;
   padding-top: 3rem;
   color: var(--primary-color);
 }
@@ -162,6 +189,13 @@ header {
   outline: none;
   background: none;
   cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .hero {
+    background-image: url(../images/header-desktop.svg);
+    background-size: cover;
+  }
 }
 
 /* End Hero Section */
