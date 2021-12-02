@@ -350,10 +350,10 @@ header {
   margin: 0.5rem;
 }
 
+/* prettier-ignore */
 @media screen and (min-width: 992px) {
   .about {
-    background: no-repeat 100% -3% url(../images/about-right-bg-desktop.svg);
-    background: no-repeat -3% 30% url(../images/about-left-bg-desktop.svg);
+    background: no-repeat 100% -3% url(../images/about-right-bg-desktop.svg), no-repeat -3% 30% url(../images/about-left-bg-desktop.svg);
   }
 }
 
@@ -361,7 +361,6 @@ header {
 
 /* Start Contact Section */
 
-/* prettier-ignore */
 .contact {
   margin-block: 6rem;
   display: flex;
@@ -416,14 +415,13 @@ input[type="submit"] {
   font-size: 2rem;
 }
 
+/* prettier-ignore */
 @media screen and (min-width: 992px) {
   .contact {
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 4rem;
-    background: no-repeat 100% 10% url(../images/contact-bg-right-desktop.svg);
-    background: no-repeat 0% 90% url(../images/contact-bg-left-desktop.svg);
-    background: no-repeat 30% 90% url(../images/contact-bg-md-desktop.svg);
+    background: no-repeat 100% 10% url(../images/contact-bg-right-desktop.svg), no-repeat 0% 90% url(../images/contact-bg-left-desktop.svg), no-repeat 30% 90% url(../images/contact-bg-md-desktop.svg);
   }
 
   .contact .title {
