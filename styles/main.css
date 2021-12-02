@@ -111,8 +111,6 @@ li {
 /* Start Header Section */
 
 header {
-  position: fixed;
-  top: 0;
   width: 100vw;
   min-height: 8vh;
   display: -webkit-box;
