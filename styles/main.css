@@ -361,12 +361,15 @@ header {
 
 .contact {
   margin-block: 6rem;
+  background: no-repeat 100% 95% url(../images/form-bg.svg);
+  width: 100vw;
+}
+
+.contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--primary-color);
-  background: no-repeat 100% 95% url(../images/form-bg.svg);
-  width: 100vw;
 }
 
 form {
@@ -416,34 +419,40 @@ input[type="submit"] {
 /* prettier-ignore */
 @media screen and (min-width: 992px) {
   .contact {
-    flex-direction: row;
-    flex-wrap: wrap;
     margin-bottom: 4rem;
     background: no-repeat 100% 10% url(../images/contact-bg-right-desktop.svg), no-repeat 0% 90% url(../images/contact-bg-left-desktop.svg), no-repeat 30% 90% url(../images/contact-bg-md-desktop.svg);
   }
 
+  .contact-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+  }
+
   .contact .title {
     margin: 0;
-    width: 50vw;
+    width: 40%;
+    text-align: left;
     font-size: 3rem;
     padding-inline: 2rem;
   }
 
   form {
     margin: 0;
-    width: 50vw;
+    width: 60%;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   input[type="text"],
   input[type="email"] {
-    width: 45%;
+    width: 48%;
     margin-right: 1rem;
   }
 
   textarea {
-    width: 92%;
+    width: 98%;
   }
 
   .email-address {
