@@ -18,14 +18,25 @@
       <a href="#" class="logo"> Welcome </a>
 
       <nav>
-        <div>
+
+        <ul class="nav-list">
+          <li class="list-item">Portfolio</li>
+          <li class="list-item">About</li>
+          <li class="list-item">Contact</li>
+        </ul>
+
+        <div class="nav-menu">
           <img src="./images/menu.svg" alt="menu-icon" class="burger">
         </div>
+
       </nav>
 
     </header>
+
     <main>
+
       <section class="hero">
+
         <h1 class="title">Hey there. I’m Kyrillos <span>I’m a software developer</span></h1>
 
         <p class="description">
@@ -275,22 +286,26 @@
         </ul>
       </section>
     </main>
+
     <section class="contact">
 
-      <h3 class="title">
-        I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-      </h3>
+      <div class="contact-container">
+        <h3 class="title">
+          I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+        </h3>
 
-      <form action="https://formspree.io/f/xzbopkkk" method="POST" id="my-form">
+        <form action="https://formspree.io/f/xzbopkkk" method="POST" id="my-form">
 
-        <input type="text" placeholder="Full name" maxlength="30" name="full-name" required>
+          <input type="text" placeholder="Full name" maxlength="30" name="full-name" required>
 
-        <input type="email" placeholder="Email address" name="email" required>
+          <input type="email" placeholder="Email address" name="email" required>
 
-        <textarea placeholder="Enter text here" name="message" maxlength="500" required></textarea>
+          <textarea placeholder="Enter text here" name="message" maxlength="500" required></textarea>
 
-        <input type="submit" class="btn btn--green" value="Get in Touch">
-      </form>
+          <input type="submit" class="btn btn--green" value="Get in Touch">
+        </form>
+      </div>
+
 
       <div class="contact-details">
         <ul class="links">
@@ -322,6 +337,7 @@
         </ul>
         <p class="email-address">kyrilloshan99@gmail.com</p>
       </div>
+
     </section>
 
   </body>
