@@ -106,10 +106,12 @@ li {
     animation-name: fade;
     animation-duration: 3s;
   }
+
   @keyframes fade {
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
@@ -161,7 +163,8 @@ header {
     gap: 2rem;
     cursor: pointer;
   }
-  .list-item:hover{
+
+  .list-item:hover {
     color: var(--secondary-color);
     transition: 0.2s;
   }
@@ -258,6 +261,12 @@ header {
   width: 100%;
   height: 100%;
   padding-block: 10%;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.card__img:hover {
+  transform: scale(1.1);
 }
 
 .card__details {
