@@ -270,11 +270,11 @@ header {
 
 .card__list,
 .about__card__list {
-  width: 100%;
   display: -webkit-box;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .card__list > li {
