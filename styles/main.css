@@ -103,6 +103,18 @@ li {
 
   .links {
     width: 20vw;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 }
 
@@ -150,6 +162,11 @@ header {
     font-size: 1.5rem;
     gap: 2rem;
     cursor: pointer;
+  }
+
+  .list-item:hover {
+    color: var(--secondary-color);
+    transition: 0.2s;
   }
 }
 
@@ -244,6 +261,12 @@ header {
   width: 100%;
   height: 100%;
   padding-block: 10%;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.card__img:hover {
+  transform: scale(1.1);
 }
 
 .card__details {
@@ -402,6 +425,7 @@ textarea {
 input[type="submit"] {
   margin-top: 2.4rem;
   width: 12.9rem;
+  cursor: pointer;
 }
 
 .contact-details {
