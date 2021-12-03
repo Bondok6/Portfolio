@@ -151,6 +151,11 @@ header {
     gap: 2rem;
     cursor: pointer;
   }
+  .list-item:hover{
+    color: var(--secondary-color);
+    transition: 0.2s;
+
+  }
 }
 
 /* Start Header Section */
