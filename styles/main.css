@@ -103,6 +103,16 @@ li {
 
   .links {
     width: 20vw;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 
@@ -154,7 +164,6 @@ header {
   .list-item:hover{
     color: var(--secondary-color);
     transition: 0.2s;
-
   }
 }
 
