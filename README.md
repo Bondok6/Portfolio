@@ -4,7 +4,8 @@
 
 > ### This is a website that exemplifies my skills, projects, qualifications, education, training, experiences, and resume.
 
-![screenshot](./images/screenshot-mobile.PNG)
+<img src="./images/screenshot-mobile.PNG" width="30%" /><img src="./images/screenshot-desktop.PNG" width="70%" />
+
 
 ## Built With
 
