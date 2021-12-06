@@ -6,7 +6,6 @@
 
 <img src="./images/screenshot-mobile.PNG" width="30%" /><img src="./images/screenshot-desktop.PNG" width="70%" />
 
-
 ## Built With
 
 - HTML - HTML5
@@ -19,13 +18,13 @@
 
 ## Live Demo
 
-[Live Demo Link](https://bondok6.github.io/Portfolio/)
+[Kyrillos's Portfolio](https://bondok6.github.io/Portfolio/)
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-`   git clone git@github.com:Bondok6/Portfolio.git    `
+`git clone git@github.com:Bondok6/Portfolio.git`
 
 ## Authors
 
