@@ -23,6 +23,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -158,14 +159,18 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
     gap: 2rem;
     cursor: pointer;
   }
 
-  .list-item:hover {
-    color: var(--secondary-color);
+  .list-item a {
+    font-size: 2rem;
     transition: 0.2s;
+    color: var(--primary-color);
+  }
+
+  .list-item a:hover {
+    color: var(--secondary-color);
   }
 }
 
