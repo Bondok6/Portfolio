@@ -103,8 +103,7 @@ li {
 
   .links {
     width: 20vw;
-    animation-name: fade;
-    animation-duration: 3s;
+    animation: fade 3s;
   }
 
   @keyframes fade {
@@ -210,20 +209,6 @@ header {
   .hero {
     background-image: url(../images/header-desktop.svg);
     background-size: cover;
-  }
-
-  .title {
-    animation: move 4s;
-  }
-
-  @keyframes move {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
   }
 }
 
