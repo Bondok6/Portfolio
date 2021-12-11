@@ -88,12 +88,12 @@ li {
 }
 
 .btn:hover {
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 1rem 2rem rgb(99, 211, 164);
 }
 
 .btn:active,
 .btn:focus {
-  background-color: #008552;
+  background-color: #15ad73;
 }
 
 @media screen and (min-width: 992px) {
@@ -122,7 +122,7 @@ li {
 
 /* Start Header Section */
 
-header {
+nav {
   width: 100vw;
   min-height: 8vh;
   display: -webkit-box;
@@ -155,10 +155,7 @@ header {
   }
 
   .nav-list {
-    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
     cursor: pointer;
   }
