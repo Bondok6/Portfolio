@@ -1,8 +1,10 @@
 const mobileMenu = ()=>{  
-  let btnMenu = document.querySelector(".burger");
-  let menuDisplay = document.querySelector(".nav-list")
+  const btnMenu = document.querySelector(".burger");
+  const menuDisplay = document.querySelector(".nav-list")
  
   btnMenu.addEventListener("click",()=>{
-    
+    menuDisplay.classList.toggle("menu-active");    
   })
 }
+
+mobileMenu();
