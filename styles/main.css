@@ -179,7 +179,7 @@ nav {
   min-height: 100vh;
   background-image: url(../images/header-mobile.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
