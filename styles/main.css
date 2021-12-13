@@ -145,7 +145,27 @@ nav {
 }
 
 .nav-list {
-  display: none;
+  /* display: none; */
+  position: absolute;
+  top: 8vh;
+  left: 0;
+  width: 100vw;
+  height: 92vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  transform: translateX(-100%);
+}
+
+.list-item a {
+  font-size: 3.2rem;
+  color: var(--text-color);
+  margin-left: 2.8rem;
+}
+
+.menu-active {
+  transform: translateX(0%);
 }
 
 @media screen and (min-width: 992px) {
