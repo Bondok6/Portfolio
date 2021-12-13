@@ -176,6 +176,7 @@ nav {
   }
 
   .nav-list {
+    all: unset;
     display: flex;
     gap: 2rem;
     cursor: pointer;
