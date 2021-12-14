@@ -25,3 +25,70 @@ const mobileMenu = () => {
 };
 
 mobileMenu();
+
+const modalContent = [
+  {
+    modalImg: "images/work-screenshots/Bankist.PNG",
+    modalName: "Bankist App",
+    technologies: ["javaScript", "Css", "Html"],
+    description:
+      "A beautiful website with a lot of different components and visual effects that require some pretty advanced DOM manipulation techniques.",
+    links: [
+      "https://bondok6.github.io/Bankist/",
+      "https://github.com/Bondok6/Bankist",
+    ],
+  },
+  {
+    modalImg: "images/work-screenshots/expense-tracker.PNG",
+    modalName: "Expense Tracker App",
+    technologies: ["javaScript", "Css", "Html"],
+    description:
+      "This app helps you manage your money on the go. By understanding what you spend money on and how much you spend, you can see exactly where your cash is going.",
+    links: [
+      "https://github.com/Bondok6/Expense-tracker-app",
+      "https://github.com/Bondok6/Expense-tracker-app",
+    ],
+  },
+  {
+    modalImg: "images/work-screenshots/mapty-app.PNG",
+    modalName: "Mapty App",
+    technologies: ["javaScript", "Css", "Html", "React"],
+    description:
+      "In this app, you can log your running or cycling workouts with location, distance, time, and steps/minute. You can also see all your workouts on a map.",
+    links: [
+      "https://bondok6.github.io/Mapty-app/",
+      "https://github.com/Bondok6/Mapty-app",
+    ],
+  },
+  {
+    modalImg: "images/work-screenshots/pigGame.PNG",
+    modalName: "Pig Game",
+    technologies: ["javaScript", "Css", "Html"],
+    description:
+      'Dice Game. Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold". Go to Github to read more...',
+    links: [
+      "https://bondok6.github.io/Pig-Game/",
+      "https://github.com/Bondok6/Pig-Game",
+    ],
+  },
+  {
+    modalImg: "images/work-screenshots/youtube.PNG",
+    modalName: "YouTube Clone App",
+    technologies: ["Css", "Html"],
+    description: "The mockup design of YouTube page.",
+    links: [
+      "https://bondok6.github.io/odin-youtube/",
+      "https://github.com/Bondok6/odin-youtube",
+    ],
+  },
+  {
+    modalImg: "images/work-screenshots/giphy.PNG",
+    modalName: "Giphy App",
+    technologies: ["javaScript", "Css", "Html"],
+    description: "Giphy Search, Search for the GIF image you want ...",
+    links: [
+      "https://bondok6.github.io/Giphy-Search/",
+      "https://github.com/Bondok6/Giphy-Search",
+    ],
+  },
+];
