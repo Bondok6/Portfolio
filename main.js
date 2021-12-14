@@ -1,26 +1,24 @@
 const mobileMenu = () => {
-  const btnMenu = document.querySelector(".burger");
-  const menuDisplay = document.querySelector(".nav-list");
-  const links = document.querySelectorAll(".list-item");
-  const iconSrc = document.querySelector(".burger");
+  const btnMenu = document.querySelector('.nav-menu');
+  const menuDisplay = document.querySelector('.nav-list');
+  const links = document.querySelectorAll('.list-item');
+  const iconSrc = document.querySelector('.burger');
+  const ImgUrl = document.querySelector('.burger').src;
 
-  btnMenu.addEventListener("click", () => {
-    menuDisplay.classList.toggle("menu-active");
-    iconSrc.src = "images/exit.svg";
+  const openMenu = () => {
+    menuDisplay.classList.toggle('menu-active');
+    if (iconSrc.src === ImgUrl) iconSrc.src = 'images/exit.svg';
+    else iconSrc.src = ImgUrl;
+  };
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') openMenu();
   });
 
+  btnMenu.addEventListener('click', openMenu);
   links.forEach((link) => {
-    link.addEventListener("click", () => {
-      menuDisplay.classList.remove("menu-active");
-    });
+    link.addEventListener('click', openMenu);
   });
-
-  // btnMenu.addEventListener("keydown", (e) => {
-  //   if (e.key === "") {
-  //     menuDisplay.classList.toggle("menu-active");
-  //     iconSrc.src = "images/exit.svg";
-  //   }
-  // });
 };
 
 mobileMenu();
