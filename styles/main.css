@@ -155,7 +155,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
   transform: translateX(-100%);
 }
 
