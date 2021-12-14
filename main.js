@@ -1,26 +1,27 @@
 const mobileMenu = () => {
-  const btnMenu = document.querySelector('.nav-menu');
-  const menuDisplay = document.querySelector('.nav-list');
-  const links = document.querySelectorAll('.list-item');
-  const iconSrc = document.querySelector('.burger');
-  const ImgUrl = document.querySelector('.burger').src;
-  const welcomeLogo = document.querySelector('.logo');
+  const btnMenu = document.querySelector(".nav-menu");
+  const menuDisplay = document.querySelector(".nav-list");
+  const links = document.querySelectorAll(".list-item");
+  const iconSrc = document.querySelector(".burger");
+  const ImgUrl = document.querySelector(".burger").src;
+  const welcomeLogo = document.querySelector(".logo");
 
   const openMenu = () => {
-    menuDisplay.classList.toggle('menu-active');
-    if (welcomeLogo.style.display !== 'none') welcomeLogo.style.display = 'none';
-    else welcomeLogo.style.display = 'block';
-    if (iconSrc.src === ImgUrl) iconSrc.src = 'images/exit.svg';
+    menuDisplay.classList.toggle("menu-active");
+    if (welcomeLogo.style.display !== "none")
+      welcomeLogo.style.display = "none";
+    else welcomeLogo.style.display = "block";
+    if (iconSrc.src === ImgUrl) iconSrc.src = "images/exit.svg";
     else iconSrc.src = ImgUrl;
   };
 
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Tab') openMenu();
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Tab") openMenu();
   });
 
-  btnMenu.addEventListener('click', openMenu);
+  btnMenu.addEventListener("click", openMenu);
   links.forEach((link) => {
-    link.addEventListener('click', openMenu);
+    link.addEventListener("click", openMenu);
   });
 };
 
@@ -92,3 +93,38 @@ const modalContent = [
     ],
   },
 ];
+
+const modalHtml = `
+    <div class="modal">
+
+    <button type="button" class="modal__exit">
+      <img src="images/exit-modal.svg" alt="">
+    </button>
+    <img src="images/work-screenshots/Bankist.PNG" alt="" class="modal__img">
+
+    <h3 class="modal__name">Bankist App</h3>
+
+    <ul class="card__list modal__tech">
+      <li>javaScript</li>
+      <li>css</li>
+      <li>React</li>
+      <li>html</li>
+    </ul>
+
+    <p class="modal__description">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      mollit anim id est laborum.
+    </p>
+
+    <div class="modal__buttons">
+      <a href="#" class="btn btn--green">See Live <img src="images/see-live.svg" alt=""></a>
+      <a href="#" class="btn btn--green">See Source <img src="images/see-source.svg" alt=""></a>
+    </div>
+
+    </div>
+`;
