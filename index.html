@@ -11,7 +11,17 @@
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-214412358-1"></script>
-    <script defer src="./gtag.js"></script>
+
+    <script>
+      dataLayer = dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-214412358-2");
+
+    </script>
 
     <link rel="icon" href="images/icon.png" type="image/icon">
     <title> Portfolio of Kyrillos </title>
@@ -21,9 +31,9 @@
 
     <header>
 
-      <nav>
-        <a href="#" class="logo"> Welcome </a>
+      <a href="#" class="logo"> Welcome </a>
 
+      <nav>
         <ul class="nav-list">
           <li class="list-item"><a href="#">Portfolio</a> </li>
           <li class="list-item"><a href="#about">About</a></li>
@@ -31,7 +41,7 @@
         </ul>
 
         <div class="nav-menu">
-          <img src="./images/menu.svg" alt="menu icon" class="burger">
+          <img src="images/menu.svg" alt="menu icon" class="burger">
         </div>
 
       </nav>
@@ -363,6 +373,7 @@
 
     </main>
 
+    <script src="main.js"></script>
   </body>
 
 </html>
