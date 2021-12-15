@@ -174,10 +174,7 @@ function createCard() {
 
 document.addEventListener('DOMContentLoaded', () => {
   createCard();
-
-  document.querySelectorAll('.work .btn').forEach((btn, ind) => { 
-    btn.addEventListener('click', () => {
-      openModal(ind);
-    });
+  document.querySelectorAll('.work .btn').forEach((btn, ind) => {
+    btn.addEventListener('click', () => { openModal(ind); });
   });
 });
