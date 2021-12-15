@@ -187,10 +187,17 @@ document.addEventListener("DOMContentLoaded", () => {
 function validation() {
   const emailInput = document.querySelector('input[type="email"]');
   const form = document.getElementById("my-form");
+  const status = document.getElementById("status")
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     let emailValue = emailInput.value;
+    if(emailValue.toLowerCase() !== emailValue) {
+      status.classList.add('error');
+      status.innerHTML= "Oops! Your Email Should Be Lowercase";
+    } else {
+      form.submit();
+    }
   });
 }
 
