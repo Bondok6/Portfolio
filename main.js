@@ -75,7 +75,7 @@ const modalContent = [
   {
     modalImg: "images/work-screenshots/youtube.PNG",
     modalName: "YouTube Clone App",
-    technologies: ["Css", "Html"],
+    technologies: ["Css", "Html", "Js"],
     description: "The mockup design of YouTube page.",
     links: [
       "https://bondok6.github.io/odin-youtube/",
@@ -94,11 +94,10 @@ const modalContent = [
   },
 ];
 
-const btns = document.querySelectorAll(".work .btn");
-const section = document.querySelector(".work");
-const overlay = document.querySelector(".overlay");
-
 function openModal(ind) {
+  const section = document.querySelector(".work");
+  const overlay = document.querySelector(".overlay");
+
   let modalHtml = `
   <div class="modal">
 
@@ -140,8 +139,40 @@ function openModal(ind) {
   });
 }
 
-btns.forEach((btn, ind) => {
-  btn.addEventListener("click", () => {
-    openModal(ind);
+function createCard() {
+  const cardContainer = document.querySelector(".card-container");
+  for (let ind = modalContent.length - 1; ind >= 0; ind--) {
+    let card = `          
+    <li class="card">
+    
+    <div class="card__imgbox">
+      <img src="${modalContent[ind].modalImg}" alt="" class="card__img">
+    </div>
+    
+    <div class="card__details">
+      <h3 class="card__text">${modalContent[ind].modalName}</h3>
+    
+      <ul class="card__list">
+        <li>${modalContent[ind].technologies[0]}</li>
+        <li>${modalContent[ind].technologies[1]}</li>
+        <li>${modalContent[ind].technologies[2]}</li>
+      </ul>
+    
+      <button type="button" class="btn btn--green">See Project</button>
+    </div>
+    
+    </li>`;
+
+    cardContainer.insertAdjacentHTML("afterbegin", card);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  createCard();
+
+  document.querySelectorAll(".work .btn").forEach((btn, ind) => {
+    btn.addEventListener("click", () => {
+      openModal(ind);
+    });
   });
 });
