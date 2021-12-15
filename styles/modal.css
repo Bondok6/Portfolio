@@ -1,19 +1,20 @@
 .modal {
-  position: absolute;
-  top: 170%;
+  position: fixed;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
-  height: 90%;
-  background-color: white;
+  width: 90%;
+  height: 70%;
+  background-color: #fff;
   padding: 1.6rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  z-index: 50;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
+  overflow: hidden;
 }
 
 .modal__img {
@@ -49,8 +50,7 @@
 .modal__buttons {
   width: 100%;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-evenly;
 }
 
 .modal__buttons img {
@@ -73,6 +73,7 @@
 @media screen and (min-width: 992px) {
   .modal {
     width: 75%;
+    height: 95%;
     padding: 2.4rem;
   }
 
@@ -89,13 +90,8 @@
   .modal__buttons {
     position: relative;
     left: 20rem;
-    bottom: 25rem;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .modal__buttons {
-    left: 29rem;
-    bottom: 20rem;
+    bottom: 17rem;
+    justify-content: center;
+    gap: 2rem;
   }
 }

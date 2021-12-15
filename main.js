@@ -94,37 +94,54 @@ const modalContent = [
   },
 ];
 
-const modalHtml = `
-    <div class="modal">
+const btns = document.querySelectorAll(".work .btn");
+const section = document.querySelector(".work");
+const overlay = document.querySelector(".overlay");
 
-    <button type="button" class="modal__exit">
-      <img src="images/exit-modal.svg" alt="">
-    </button>
-    <img src="images/work-screenshots/Bankist.PNG" alt="" class="modal__img">
+function openModal(ind) {
+  let modalHtml = `
+  <div class="modal">
 
-    <h3 class="modal__name">Bankist App</h3>
+  <button type="button" class="modal__exit">
+    <img src="images/exit-modal.svg" alt="">
+  </button>
 
-    <ul class="card__list modal__tech">
-      <li>javaScript</li>
-      <li>css</li>
-      <li>React</li>
-      <li>html</li>
-    </ul>
+  <img src="${modalContent[ind].modalImg}" alt="" class="modal__img">
 
-    <p class="modal__description">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-      mollit anim id est laborum.
-    </p>
+  <h3 class="modal__name">${modalContent[ind].modalName}</h3>
 
-    <div class="modal__buttons">
-      <a href="#" class="btn btn--green">See Live <img src="images/see-live.svg" alt=""></a>
-      <a href="#" class="btn btn--green">See Source <img src="images/see-source.svg" alt=""></a>
-    </div>
+  <ul class="card__list modal__tech">
+    <li>${modalContent[ind].technologies[0]}</li>
+    <li>${modalContent[ind].technologies[1]}</li>
+    <li>${modalContent[ind].technologies[2]}</li>
+  </ul>
 
-    </div>
+  <p class="modal__description">
+    ${modalContent[ind].description}
+  </p>
+
+  <div class="modal__buttons">
+    <a href="${modalContent[ind].links[0]}" class="btn btn--green">See Live <img src="images/see-live.svg" alt=""></a>
+    <a href="${modalContent[ind].links[1]}" class="btn btn--green">See Source <img src="images/see-source.svg" alt=""></a>
+  </div>
+
+  </div>
 `;
+
+  section.insertAdjacentHTML("afterbegin", modalHtml);
+  overlay.classList.remove("hidden");
+
+  const closeModalIcon = document.querySelector(".modal__exit");
+  const modal = document.querySelector(".modal");
+
+  closeModalIcon.addEventListener("click", () => {
+    modal.classList.add("hidden");
+    overlay.classList.add("hidden");
+  });
+}
+
+btns.forEach((btn, ind) => {
+  btn.addEventListener("click", () => {
+    openModal(ind);
+  });
+});

@@ -73,6 +73,7 @@ li {
   border-radius: 4px;
   color: #fff;
   transition: 0.6s;
+  border: none;
 }
 
 .btn--green {
