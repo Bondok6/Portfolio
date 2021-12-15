@@ -30,6 +30,7 @@ const modalContent = [
   {
     modalImg: 'images/work-screenshots/Bankist.PNG',
     modalName: 'Bankist App',
+    alt: 'project img',
     technologies: ['javaScript', 'Css', 'Html'],
     description:
       'A beautiful website with a lot of different components and visual effects that require some pretty advanced DOM manipulation techniques.',
@@ -41,6 +42,7 @@ const modalContent = [
   {
     modalImg: 'images/work-screenshots/expense-tracker.PNG',
     modalName: 'Expense Tracker App',
+    alt: 'project img',
     technologies: ['javaScript', 'Css', 'Html'],
     description:
       'This app helps you manage your money on the go. By understanding what you spend money on and how much you spend, you can see exactly where your cash is going.',
@@ -52,6 +54,7 @@ const modalContent = [
   {
     modalImg: 'images/work-screenshots/mapty-app.PNG',
     modalName: 'Mapty App',
+    alt: 'project img',
     technologies: ['javaScript', 'Css', 'Html', 'React'],
     description:
       'In this app, you can log your running or cycling workouts with location, distance, time, and steps/minute. You can also see all your workouts on a map.',
@@ -63,6 +66,7 @@ const modalContent = [
   {
     modalImg: 'images/work-screenshots/pigGame.PNG',
     modalName: 'Pig Game',
+    alt: 'project img',
     technologies: ['javaScript', 'Css', 'Html'],
     description:
       'Dice Game. Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to hold. Go to Github to read more...',
@@ -74,6 +78,7 @@ const modalContent = [
   {
     modalImg: 'images/work-screenshots/youtube.PNG',
     modalName: 'YouTube Clone App',
+    alt: 'project img',
     technologies: ['Css', 'Html', 'Js'],
     description: 'The mockup design of YouTube page.',
     links: [
@@ -84,6 +89,7 @@ const modalContent = [
   {
     modalImg: 'images/work-screenshots/giphy.PNG',
     modalName: 'Giphy App',
+    alt: 'project img',
     technologies: ['javaScript', 'Css', 'Html'],
     description: 'Giphy Search, Search for the GIF image you want ...',
     links: [
@@ -104,7 +110,7 @@ function openModal(ind) {
     <img src='images/exit-modal.svg' alt=''>
   </button>
 
-  <img src='${modalContent[ind].modalImg}' alt='' class='modal__img'>
+  <img src='${modalContent[ind].modalImg}' alt='${modalContent[ind].alt}' class='modal__img'>
 
   <h3 class='modal__name'>${modalContent[ind].modalName}</h3>
 
@@ -145,7 +151,7 @@ function createCard() {
     <li class='card'> 
     
     <div class='card__imgbox'>
-      <img src='${modalContent[ind].modalImg}' alt='' class='card__img'>
+      <img src='${modalContent[ind].modalImg}' alt='${modalContent[ind].alt}' class='card__img'>
     </div>
     
     <div class='card__details'>
