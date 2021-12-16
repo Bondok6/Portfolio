@@ -476,6 +476,20 @@ input[type="submit"] {
   font-size: 2rem;
 }
 
+.error {
+  display: block;
+  width: 300px;
+  height: 60px;
+  margin: 2rem;
+  padding-top: 1rem;
+  border-radius: 7px;
+  font-size: 1.7rem;
+  font-style: italic;
+  text-align: center;
+  color: #fff;
+  background-color: var(--red-btn);
+}
+
 /* prettier-ignore */
 @media screen and (min-width: 992px) {
   .contact {
