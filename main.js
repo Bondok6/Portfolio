@@ -182,15 +182,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Form Validation
+const form = document.getElementById('my-form');
 
 function validation() {
-  const emailInput = document.querySelector('input[type="email"]');
-  const form = document.getElementById('my-form');
   const status = document.getElementById('status');
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const emailValue = emailInput.value;
+    const emailValue = form.email.value;
     if (emailValue.toLowerCase() !== emailValue) {
       status.classList.add('error');
       status.innerHTML = 'Oops! Your Email Should Be Lowercase';
@@ -201,3 +200,47 @@ function validation() {
 }
 
 validation();
+
+function storageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return e instanceof DOMException && (
+    // everything except Firefox
+      e.code === 22
+          // Firefox
+          || e.code === 1014
+          // test name field too, because code might not be present
+          // everything except Firefox
+          || e.name === 'QuotaExceededError'
+          // Firefox
+          || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+          // acknowledge QuotaExceededError only if there's something already stored
+          && (storage && storage.length !== 0);
+  }
+}
+
+if (storageAvailable('localStorage')) {
+  const inputs = [form.fullName, form.email, form.message];
+  inputs.forEach((input) => {
+    input.addEventListener('input', () => {
+      const dataObj = {
+        fullName: form.fullName.value,
+        email: form.email.value,
+        message: form.message.value,
+      };
+      localStorage.setItem('data', JSON.stringify(dataObj));
+    });
+  });
+
+  const getData = JSON.parse(localStorage.getItem('data'));
+
+  form.fullName.value = getData.fullName;
+  form.email.value = getData.email;
+  form.message.value = getData.message;
+}
