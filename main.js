@@ -240,4 +240,8 @@ if (storageAvailable('localStorage')) {
       localStorage.setItem('data', JSON.stringify(dataObj));
     })
   })
+  const getData = JSON.parse(localStorage.getItem('data'));
+  form.fullName.value = getData.fullName;
+  form.email.value = getData.email;
+  form.message.value = getData.message;
 }
