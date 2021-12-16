@@ -175,6 +175,29 @@ function createCard() {
 document.addEventListener('DOMContentLoaded', () => {
   createCard();
   document.querySelectorAll('.work .btn').forEach((btn, ind) => {
-    btn.addEventListener('click', () => { openModal(ind); });
+    btn.addEventListener('click', () => {
+      openModal(ind);
+    });
   });
 });
+
+// Form Validation
+
+function validation() {
+  const emailInput = document.querySelector('input[type="email"]');
+  const form = document.getElementById('my-form');
+  const status = document.getElementById('status');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const emailValue = emailInput.value;
+    if (emailValue.toLowerCase() !== emailValue) {
+      status.classList.add('error');
+      status.innerHTML = 'Oops! Your Email Should Be Lowercase';
+    } else {
+      form.submit();
+    }
+  });
+}
+
+validation();
