@@ -65,6 +65,11 @@ li {
   justify-content: space-evenly;
 }
 
+.links img:hover {
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+
 .btn {
   font-size: 1.7rem;
   font-weight: 500;
@@ -100,7 +105,7 @@ li {
 @media screen and (min-width: 992px) {
   .title,
   .description {
-    margin-inline: 22rem;
+    margin-inline: 30rem;
   }
 
   .links {
