@@ -5,5 +5,5 @@
 
 # Linters
 .hintrc
-.styleintrc.json
+.stylelintrc.json
 .eslintrc.json
