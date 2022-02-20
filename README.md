@@ -33,7 +33,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Kyrillos Hany**
 
 - GitHub: [@Bondok6](https://github.com/Bondok6)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kyrillos-hany/)
@@ -46,8 +46,24 @@ Feel free to check the [issues page](../../issues/).
 
 ### List of Contribuitors
 
+👤 **Marcelo**
+
 - GitHub: [@marcelosdata](https://github.com/marcelosdata)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/msn9/)
+
+👤 **Fernando**
+
+- GitHub: [@fernando](https://github.com/fherrerao)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/fernando-herrera-25a6361b2/)
+
+👤 **Nicolas**
+
+- GitHub: [@Nicolas](https://github.com/Nicolaswg)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nicolas-gonzalez-8623461a0/)
+
+👤 **Jordan**
+
+- GitHub: [@Jordan](https://github.com/Jord4N-AC)
 
 ## Show your support
 
