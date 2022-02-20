@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-around;
   gap: 2rem;
   overflow: hidden;
 }
@@ -28,6 +29,8 @@
   cursor: pointer;
   border: none;
   outline: none;
+  background: none;
+  font-size: 4rem;
 }
 
 .modal__name {
@@ -71,8 +74,8 @@
 
 @media screen and (min-width: 992px) {
   .modal {
-    width: 60%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     padding: 2.4rem;
   }
 
@@ -83,7 +86,6 @@
   }
 
   .modal__exit {
-    background-color: #ebecf0;
     top: 2rem;
   }
 

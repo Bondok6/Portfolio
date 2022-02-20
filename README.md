@@ -14,6 +14,7 @@
 ## Additional tools
 
 - Figma
+- Google Analytics
 - FormSpree
 
 ## Live Demo
@@ -24,14 +25,18 @@
 
 To get a local copy up and running follow these simple example steps.
 
-`git clone git@github.com:Bondok6/Portfolio.git`
+1. `git clone git@github.com:Bondok6/Portfolio.git`
+
+2. `cd Portfolio`
+
+3. Open `index.html` in browser.
 
 ## Authors
 
 👤 **Author1**
 
 - GitHub: [@Bondok6](https://github.com/Bondok6)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kyrillos-hany/)
 
 ## 🤝 Contributing
 
