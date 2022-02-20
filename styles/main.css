@@ -27,9 +27,13 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 10px;
   color: var(--primary-color);
+}
+
+::selection {
+  background-color: var(--secondary-color);
 }
 
 /* Start General Rules */
@@ -43,11 +47,11 @@ body {
 }
 
 .description {
+  max-width: 80rem;
   font-size: 2rem;
   font-weight: 400;
   line-height: 1.5;
   text-align: center;
-  margin-inline: 2.4rem;
 }
 
 a {
@@ -270,7 +274,7 @@ nav {
 
 .title--work::after,
 .title--about::after {
-  content: "";
+  content: '';
   display: block;
   border-bottom: 4px solid var(--secondary-color);
   border-radius: 2.4rem;
@@ -463,7 +467,7 @@ textarea {
   resize: vertical;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   margin-top: 2.4rem;
   width: 12.9rem;
   cursor: pointer;
