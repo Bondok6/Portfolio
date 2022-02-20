@@ -29,15 +29,15 @@ mobileMenu();
 
 const modalContent = [
   {
-    modalImg: 'images/work-screenshots/Bankist.PNG',
-    modalName: 'Bankist App',
+    modalImg: 'images/work-screenshots/imgs/taste-food.PNG',
+    modalName: 'Taste Food',
     alt: 'project img',
     technologies: ['javaScript', 'Css', 'Html'],
     description:
-      'A beautiful website with a lot of different components and visual effects that require some pretty advanced DOM manipulation techniques.',
+      'The Taste food web app is our JavaScript capstone project, Taste food is a web application based on an external food API TheMealDB, showing data about different types of foods.',
     links: [
-      'https://bondok6.github.io/Bankist/',
-      'https://github.com/Bondok6/Bankist',
+      'https://bondok6.github.io/taste-food/',
+      'https://github.com/Bondok6/taste-food/',
     ],
   },
   {
@@ -77,25 +77,27 @@ const modalContent = [
     ],
   },
   {
-    modalImg: 'images/work-screenshots/youtube.PNG',
-    modalName: 'YouTube Clone App',
+    modalImg: 'images/work-screenshots/imgs/math-magicians.PNG',
+    modalName: 'Math Magicians',
     alt: 'project img',
-    technologies: ['Css', 'Html', 'Js'],
-    description: 'The mockup design of YouTube page.',
+    technologies: ['React.js', 'Html', 'Css'],
+    description:
+      'A website for all fans of mathematics. It is a React.js project that allows users to make simple calculations and read a random math-related quote.',
     links: [
-      'https://bondok6.github.io/odin-youtube/',
-      'https://github.com/Bondok6/odin-youtube',
+      'https://bondok6.github.io/math-magicians/',
+      'https://github.com/Bondok6/math-magicians',
     ],
   },
   {
-    modalImg: 'images/work-screenshots/giphy.PNG',
-    modalName: 'Giphy App',
+    modalImg: 'images/work-screenshots/imgs/natrous.PNG',
+    modalName: 'Natours',
     alt: 'project img',
     technologies: ['javaScript', 'Css', 'Html'],
-    description: 'Giphy Search, Search for the GIF image you want ...',
+    description:
+      'Pure CSS website to practice the latest Advanced CSS and SASS Features.',
     links: [
-      'https://bondok6.github.io/Giphy-Search/',
-      'https://github.com/Bondok6/Giphy-Search',
+      'https://bondok6.github.io/Natours/',
+      'https://github.com/Bondok6/Natours',
     ],
   },
 ];
