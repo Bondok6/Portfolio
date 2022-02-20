@@ -44,6 +44,12 @@ body {
   padding: 1rem;
   text-align: center;
   margin-inline: 2.4rem;
+  transition: 0.4s;
+}
+
+.title:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem var(--secondary-color);
 }
 
 .description {
@@ -158,6 +164,12 @@ nav {
 .burger {
   cursor: pointer;
   margin-right: 8rem;
+}
+
+.exit-menu {
+  font-size: 4rem;
+  margin-right: 7rem;
+  cursor: pointer;
 }
 
 .nav-list {
