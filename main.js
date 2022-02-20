@@ -1,25 +1,29 @@
 const mobileMenu = () => {
-  const btnMenu = document.querySelector('.nav-menu');
+  const burgerMenu = document.querySelector('.burger');
+  const exitMenu = document.querySelector('.exit-menu');
+
   const menuDisplay = document.querySelector('.nav-list');
   const links = document.querySelectorAll('.list-item');
-  const iconSrc = document.querySelector('.burger');
-  const ImgUrl = document.querySelector('.burger').src;
   const welcomeLogo = document.querySelector('.logo');
 
   const openMenu = () => {
-    menuDisplay.classList.toggle('menu-active');
-    if (welcomeLogo.style.display !== 'none') { welcomeLogo.style.display = 'none'; } else welcomeLogo.style.display = 'block';
-    if (iconSrc.src === ImgUrl) iconSrc.src = 'images/exit.svg';
-    else iconSrc.src = ImgUrl;
+    menuDisplay.classList.add('menu-active');
+    burgerMenu.classList.add('hidden');
+    exitMenu.classList.remove('hidden');
+    welcomeLogo.style.display = 'none';
   };
 
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Tab') openMenu();
-  });
+  const closeMenu = () => {
+    menuDisplay.classList.remove('menu-active');
+    burgerMenu.classList.remove('hidden');
+    exitMenu.classList.add('hidden');
+  };
 
-  btnMenu.addEventListener('click', openMenu);
+  burgerMenu.addEventListener('click', openMenu);
+  exitMenu.addEventListener('click', closeMenu);
+
   links.forEach((link) => {
-    link.addEventListener('click', openMenu);
+    link.addEventListener('click', closeMenu);
   });
 };
 
@@ -212,19 +216,19 @@ function storageAvailable(type) {
     return true;
   } catch (e) {
     return (
-      e instanceof DOMException
+      e instanceof DOMException &&
       // everything except Firefox
-      && (e.code === 22
+      (e.code === 22 ||
         // Firefox
-        || e.code === 1014
+        e.code === 1014 ||
         // test name field too, because code might not be present
         // everything except Firefox
-        || e.name === 'QuotaExceededError'
+        e.name === 'QuotaExceededError' ||
         // Firefox
-        || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+        e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
       // acknowledge QuotaExceededError only if there's something already stored
-      && storage
-      && storage.length !== 0
+      storage &&
+      storage.length !== 0
     );
   }
 }
