@@ -58,7 +58,7 @@
 .modal__buttons img {
   position: relative;
   top: 4px;
-  padding-inline: 0.5rem;
+  padding: 0 0.5rem;
 }
 
 .overlay {
