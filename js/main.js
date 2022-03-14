@@ -4,13 +4,11 @@ const mobileMenu = () => {
 
   const menuDisplay = document.querySelector('.nav-list');
   const links = document.querySelectorAll('.list-item');
-  const welcomeLogo = document.querySelector('.logo');
 
   const openMenu = () => {
     menuDisplay.classList.add('menu-active');
     burgerMenu.classList.add('hidden');
     exitMenu.classList.remove('hidden');
-    welcomeLogo.style.display = 'none';
   };
 
   const closeMenu = () => {
@@ -216,19 +214,10 @@ function storageAvailable(type) {
     return true;
   } catch (e) {
     return (
-      e instanceof DOMException
-      // everything except Firefox
-      && (e.code === 22
-        // Firefox
-        || e.code === 1014
-        // test name field too, because code might not be present
-        // everything except Firefox
-        || e.name === 'QuotaExceededError'
-        // Firefox
-        || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
-      // acknowledge QuotaExceededError only if there's something already stored
-      && storage
-      && storage.length !== 0
+      // prettier-ignore
+      (e instanceof DOMException && e.code === 22)
+      || e.code === 1014 || e.name === 'QuotaExceededError'
+      || (e.name === 'NS_ERROR_DOM_QUOTA_REACHED' && storage && storage.length !== 0)
     );
   }
 }
@@ -248,7 +237,9 @@ if (storageAvailable('localStorage')) {
 
   const getData = JSON.parse(localStorage.getItem('data'));
 
-  form.fullName.value = getData.fullName;
-  form.email.value = getData.email;
-  form.message.value = getData.message;
+  if (getData) {
+    form.fullName.value = getData.fullName;
+    form.email.value = getData.email;
+    form.message.value = getData.message;
+  }
 }
