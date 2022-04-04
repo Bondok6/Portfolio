@@ -25,11 +25,14 @@
 
 To get a local copy up and running follow these simple example steps.
 
-1. Run `git clone git@github.com:Bondok6/Portfolio.git`
+1. Run 
 
-2. Run `cd Portfolio`
+```bash
+> git clone git@github.com:Bondok6/Portfolio.git 
+> cd Portfolio
+```
 
-3. Open `index.html` in browser.
+2. Open `index.html` in browser.
 
 ## Authors
 
